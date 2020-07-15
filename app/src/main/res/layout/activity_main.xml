@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="@string/toppings"
-            android:textAllCaps="true" />
+            style="@style/HeaderTextStyle"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="@string/coffeeAmount"
-            android:textAllCaps="true"
+            style="@style/HeaderTextStyle"
             android:textColor="@android:color/holo_green_dark" />
 
         <LinearLayout
@@ -109,7 +109,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/totalPrice"
-            android:textAllCaps="true"
+            style="@style/HeaderTextStyle"
             android:textColor="@android:color/holo_green_dark" />
 
         <TextView
