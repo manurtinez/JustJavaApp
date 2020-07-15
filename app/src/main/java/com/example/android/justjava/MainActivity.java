@@ -107,10 +107,12 @@ public class MainActivity extends AppCompatActivity {
 
     private String createOrderSummary(int price, String name, boolean hasCream, boolean hasChocolate) {
         String formattedPrice = NumberFormat.getCurrencyInstance().format(price);
+        String cream = (hasCream ? getString(R.string.yes) : "No");
+        String choco = (hasChocolate ? getString(R.string.yes) : "No");
         return getString(R.string.summaryName, name)
-                + getString(R.string.quantity) + this.quantity
-                + getString(R.string.hasCreamTopping) + (hasCream ? "Yes" : "No")
-                + getString(R.string.hasChocolateTopping) + (hasChocolate ? "Yes" : "No")
+                + getString(R.string.quantity, this.quantity) + this.quantity
+                + getString(R.string.hasCreamTopping, cream)
+                + getString(R.string.hasChocolateTopping, choco)
                 + "\nTotal: " + formattedPrice
                 + getString(R.string.thankYou);
     }
