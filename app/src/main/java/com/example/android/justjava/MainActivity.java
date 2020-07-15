@@ -1,6 +1,5 @@
 package com.example.android.justjava;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -108,12 +107,12 @@ public class MainActivity extends AppCompatActivity {
 
     private String createOrderSummary(int price, String name, boolean hasCream, boolean hasChocolate) {
         String formattedPrice = NumberFormat.getCurrencyInstance().format(price);
-        return "Name: " + name
-                + "\nQuantity: " + this.quantity
-                + "\nHas Cream topping? " + (hasCream ? "Yes" : "No")
-                + "\nHas Chocolate topping? " + (hasChocolate ? "Yes" : "No")
+        return getString(R.string.summaryName, name)
+                + getString(R.string.quantity) + this.quantity
+                + getString(R.string.hasCreamTopping) + (hasCream ? "Yes" : "No")
+                + getString(R.string.hasChocolateTopping) + (hasChocolate ? "Yes" : "No")
                 + "\nTotal: " + formattedPrice
-                + "\nThank You!!";
+                + getString(R.string.thankYou);
     }
 
     /**

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Solo Java</string>
+    <string name="toppings">Ingredientes</string>
+    <string name="thankYou">Gracias!</string>
+
+    <string name="summaryName">Nombre: <xliff:g id="name" example="Manu">%s</xliff:g> </string>
+    <string name="quantity">"Cantidad: "</string>
+    <string name="hasCreamTopping">"Tiene cobertura de crema? "</string>
+    <string name="hasChocolateTopping">"Tiene cobertura de chocolate? "</string>
+    <string name="enterYourName">Ingresa tu nombre</string>
+    <string name="creamTopping">Cobertura de crema</string>
+    <string name="chocolateTopping">Cobertura de chocolate</string>
+    <string name="viewOrder">Ver Orden</string>
+    <string name="totalPrice">Precio Total</string>
+    <string name="coffeeAmount">Cantidad de cafés</string>
+</resources>
